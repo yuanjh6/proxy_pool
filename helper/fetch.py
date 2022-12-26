@@ -38,6 +38,8 @@ class _ThreadFetcher(Thread):
             for proxy in self.fetcher():
                 self.log.info('ProxyFetch - %s: %s ok' % (self.fetch_source, proxy.ljust(23)))
                 proxy = proxy.strip()
+                if proxy.startswith("127.0.0.1"):
+                    continue
                 if proxy in self.proxy_dict:
                     self.proxy_dict[proxy].add_source(self.fetch_source)
                 else:

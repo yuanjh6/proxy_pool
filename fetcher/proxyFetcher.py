@@ -89,7 +89,7 @@ class ProxyFetcher(object):
                 yield "%s:%s" % (ip, port)
 
     @staticmethod
-    def freeProxy05(page_count=1):
+    def freeProxy05(page_count=10):
         """ 快代理 https://www.kuaidaili.com """
         url_pattern = [
             'https://www.kuaidaili.com/free/inha/{}/',
