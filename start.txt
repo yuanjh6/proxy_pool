@@ -1,0 +1,2 @@
+01，激活conda环境：conda activate proxy_pool_env
+02，源码自带启动脚本./start.sh
